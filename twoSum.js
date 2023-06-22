@@ -33,7 +33,7 @@ function twoSum(nums, target) {
   for (let i = 0; i < nums.length; i++) {
     let j = nums[i];
 
-    if (sums[target - j] !== 0) {
+    if (sums[target - j] !== undefined) {
       return [sums[target - j], i];
     } else {
       sums[j] = i;
